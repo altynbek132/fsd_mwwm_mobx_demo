@@ -1,1 +1,22 @@
-include: package:flutter_lints/flutter.yaml
+include: package:lint_rules/lints.yaml
+# include: package:lint_rules/lints_nonaming.yaml
+
+# include: package:lint_rules/debug.yaml
+# include: package:lint_rules/debug_nonaming.yaml
+
+# * // ignore: name_of_lint
+# * // ignore_for_file: name_of_lint
+
+analyzer:
+  exclude:
+    # - "**/*.*.dart"
+    # - "**/*.*.*.dart"
+
+linter:
+  # true - active
+  # false - inactive
+
+  rules:
+    prefer_const_declarations: false
+    prefer_final_locals: false
+    unawaited_futures: true

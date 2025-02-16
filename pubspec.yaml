@@ -1,19 +1,176 @@
-name: altynbek_aidarbekov_supono_flutterweb_task
+name: fsd_mwwm_mobx_demo
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
   sdk: ^3.6.1
 
+dependency_overrides:
+  mobx:
+    git:
+      url: https://github.com/altynbek132/mobx.dart
+      path: mobx
+  camera_android_camerax: 0.6.11
+  camera_avfoundation: 0.9.18
+
 dependencies:
   flutter:
     sdk: flutter
 
+  shared_utils:
+    path: _packages/shared_utils
+  image_service:
+    path: _packages/image_service
+
+  # ===================================================== MY UTILS =======================================================
+
+  utils:
+    git:
+      url: https://github.com/altynbek132/flutter_util_packages
+      path: packages/utils
+  # ! overridden
+  mobx: any
+  flutter_mobx:
+    git:
+      url: https://github.com/altynbek132/mobx.dart
+      path: flutter_mobx
+  elementary:
+    git:
+      url: https://github.com/altynbek132/flutter-elementary
+      path: packages/elementary
+  disposing:
+    git:
+      url: https://github.com/altynbek132/dart_disposing
+      path: packages/disposing
+  awesome_extensions:
+    git:
+      url: https://github.com/altynbek132/awesome_extensions
+  l:
+    git: https://github.com/altynbek132/l
+
+  logger: ^2.5.0
+  flutter_screenutil: ^5.9.3
+  provider: ^6.1.2
+  collection: ^1.19.0
+  reactive_forms: ^17.0.1
+  rxdart: ^0.27.7
+  shared_preferences: ^2.5.1
+  flutter_secure_storage: ^9.2.4
+  sliver_tools: ^0.2.12
+  permission_handler: ^11.3.1
+  meta: ^1.15.0
+  json_annotation: ^4.9.0
+  freezed_annotation: ^2.4.4
+  device_preview: ^1.2.0
+
+  expandable: ^5.0.1
+  dio: ^5.8.0+1
+  mask_text_input_formatter: ^2.9.0
+  infinite_scroll_pagination: ^4.1.0
+  sliding_up_panel: ^2.0.0+1
+  flutter_slidable: ^4.0.0
+  flutter_svg: ^2.0.17
+  render_metrics: ^2.0.2
+  uuid: ^4.5.1
+  platform_info: ^5.0.0
+  dropdown_button2:
+    git:
+      url: https://github.com/altynbek132/dropdown_button2
+      ref: dev
+  ensure_visible_when_focused: ^1.2.0
+  smooth_page_indicator: ^1.2.0+3
+  modal_bottom_sheet: ^3.0.0
+  pretty_dio_logger: ^1.4.0
+  url_launcher: ^6.3.1
+  percent_indicator: ^4.2.4
+  camera: ^0.11.1
+  image: ^4.5.2
+  in_app_review: ^2.0.10
+  google_mobile_ads: ^5.3.1
+  yx_scope: ^1.0.2
+  yx_scope_flutter: ^1.0.2
+  intl: ^0.19.0
+  google_adsense: ^0.1.1
+  squadron: ^6.2.0
+  cross_file: ^0.3.4+2
+  synchronized: ^3.3.0+3
+  firebase_core: ^3.11.0
+  firebase_crashlytics: ^4.3.2
+  auto_size_text: ^3.0.0
+
+# ================================================= DEV DEPENDENCIES ===================================================
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  lint_rules:
+    git: https://github.com/altynbek132/lint_rules
+  test: ^1.25.8
+
+  build_runner: ^2.4.14
+  mockito: ^5.4.5
+  flutter_gen_runner: 5.8.0
+  json_serializable: ^6.9.0
+  freezed: ^2.5.7
+  squadron_builder: ^6.1.5
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Black.ttf
+        - asset: assets/fonts/Lato-BlackItalic.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+        - asset: assets/fonts/Lato-BoldItalic.ttf
+        - asset: assets/fonts/Lato-Italic.ttf
+        - asset: assets/fonts/Lato-Light.ttf
+        - asset: assets/fonts/Lato-LightItalic.ttf
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Thin.ttf
+        - asset: assets/fonts/Lato-ThinItalic.ttf
+
+flutter_gen:
+  # Optional
+  output: lib/shared/ui/gen/
+  # Optional
+  line_length: 80
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: false
+    rive: false
+
+  assets:
+    # Optional
+    enabled: true
+    outputs:
+      # Optional
+      # Set to true if you want this package to be a package dependency
+      # See: https://flutter.dev/docs/development/ui/assets-and-images#from-packages
+      package_parameter_enabled: false
+      # Optional
+      # Available values:
+      # - camel-case
+      # - snake-case
+      # - dot-delimiter
+      style: dot-delimiter
+
+  fonts:
+    # Optional
+    enabled: true
+
+  colors:
+    # Optional
+    enabled: true
+    # Optional
+    inputs: []

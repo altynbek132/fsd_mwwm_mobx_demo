@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "215817033589",
+    "project_id": "fsd-mwwm-mobx-demo",
+    "storage_bucket": "fsd-mwwm-mobx-demo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215817033589:android:25178627bd0e1062d2a53c",
+        "android_client_info": {
+          "package_name": "com.example.fsd_mwwm_mobx_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxP8yWIUx7bfh-2tiZAIzFJjhtWQC_p_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
